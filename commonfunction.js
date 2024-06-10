@@ -1,4 +1,4 @@
-import { save } from '../js/common.js';
+import { save } from '../common.js';
 
 export function anotherTimeSave(a=0){
     document.querySelectorAll('.js-save').forEach((button)=>{
