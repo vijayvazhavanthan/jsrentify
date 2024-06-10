@@ -1,6 +1,6 @@
-import { rentify } from "./rentify-details.js";
-import { view } from "./common.js";
-import {anotherTimeSave,anotherTimesaved,viewbutton} from '../js/commonfunction.js';
+import { rentify } from './rentify-details.js';
+import { view } from './common.js';
+import {anotherTimeSave,anotherTimesaved,viewbutton} from './commonfunction.js';
 
 console.log(view);
 
@@ -33,7 +33,7 @@ view.forEach((view)=>{
                                 <td colspan="1"></td>
 
                                 <td  class="texts" align="end" colspan="1">
-                                    <img class="logos" src="../rentify-images/pngwing.com.png">
+                                    <img class="logos" src="pngwing.com.png">
                                 </td>
                                 <td  colspan="1"class="texts" align="end">
                                     Area :
@@ -44,7 +44,7 @@ view.forEach((view)=>{
                             </tr>
                             <tr>
                                 <td align="end" colspan="2"  class="texts">
-                                    <img class="logos" src="../rentify-images/shower.png">
+                                    <img class="logos" src="shower.png">
                                 
                                 </td>
                                 <td  class="texts" align="end">
@@ -52,7 +52,7 @@ view.forEach((view)=>{
                                 </td>
                                 <td class="texts" style="color:rgb(12, 9, 95);padding-left:10px;">${rentify.bathroom}</td>
                                 <td align="end" colspan="2"  class="texts">
-                                    <img class="logos" src="../rentify-images/double-bed.png">
+                                    <img class="logos" src="double-bed.png">
                                     
                                 </td>
                                 <td  class="texts" align="end">
@@ -63,7 +63,7 @@ view.forEach((view)=>{
                             </tr>
                             <tr>
                                 <td align="end" class="texts">
-                                    <img class="logos" src="../rentify-images/hospital-buildings (1).png">
+                                    <img class="logos" src="hospital-buildings (1).png">
                                     
                                 </td>
                                 <td  class="texts" align="end">
@@ -71,7 +71,7 @@ view.forEach((view)=>{
                                 </td>
                                 <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.hospital}</td>
                                 <td align="end" class="texts">
-                                    <img class="logos" src="../rentify-images/school.png">
+                                    <img class="logos" src="school.png">
                                 
                                 </td>
                                 <td  class="texts" align="end">
@@ -79,7 +79,7 @@ view.forEach((view)=>{
                                 </td>
                                 <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.school}</td>
                                 <td align="end" class="texts">
-                                    <img class="logos" src="../rentify-images/college.png">
+                                    <img class="logos" src="college.png">
                                     
                                 </td>
                                 <td  class="texts" align="end">
@@ -89,7 +89,7 @@ view.forEach((view)=>{
                             </tr>
                             <tr>
                                 <td align="center" colspan="9"  class="texts">
-                                    <a href="../fulldetail.html">
+                                    <a href="fulldetail.html">
                                     <button class="more js-more">more..</button>
                                     </a>
                                 </td>
@@ -114,21 +114,21 @@ view.forEach((view)=>{
             <div class="flex-rentify "  id="${rentify.userid}">
                                 <div class="rentifydetail">
                                     <div class="rentify-image">
-                                            <img class="images" src="../rentify-images/${rentify.image}">
+                                            <img class="images" src="${rentify.image}">
                                     </div>
                                     <div class="rentify-details">
-                                        <img class="location" src="../rentify-images/pngwing.com.png">
+                                        <img class="location" src="pngwing.com.png">
                                         <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                                         <div class="some-details">
                                             <div class="some-detail">
-                                                <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                                <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                                 Bedroom : ${rentify.bedroom}
                                             </div>
                                             <div class="dots">
                                                 .
                                             </div>
                                             <div class="some-detail">
-                                                <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                                <img style="width:12px;margin-right:8px;" src="shower.png">
                                                 Bath : ${rentify.bathroom}
                                             </div>
                                         </div>
