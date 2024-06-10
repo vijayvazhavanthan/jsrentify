@@ -18,7 +18,7 @@ view.forEach((view)=>{
             viewhtml+=`
                     <div class="view-image-side">
                         <div class="image-border">
-                            <img class="image" style="z-index:50;" src="../rentify-images/${rentify.image}">
+                            <img class="image" style="z-index:50;" src="${rentify.image}">
                             <div style="width:50px; height:50px;background-color:white;position:absolute; bottom:-35;left:-40; border-style: solid; border-width: 0.5px;border-radius: 8px; border-color:rgba(0, 128, 0, 0.42); ">
 
                             </div>
