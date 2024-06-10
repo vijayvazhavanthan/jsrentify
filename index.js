@@ -1,7 +1,7 @@
-import {rentify} from '../js/rentify-details.js';
-import {save} from '../js/common.js';
-import {view,changeviewtype} from '../js/common.js';
-import {anotherTimeSave,anotherTimesaved,viewbutton,savelength} from '../js/commonfunction.js';
+import {rentify} from './rentify-details.js';
+import {save} from './common.js';
+import {view,changeviewtype} from './common.js';
+import {anotherTimeSave,anotherTimesaved,viewbutton,savelength} from './commonfunction.js';
 
 
 let loginopacity = 'no';
@@ -11,9 +11,9 @@ document.querySelector('.js-header-login').addEventListener('click',()=>{
         let html = `
         <div class="login-side" style="background-color:rgba(255, 255, 255, 0.299);">
             <div class="buyer-tooltip">
-                <a href="../save.html">
+                <a href="save.html">
                         <div class="save-image">
-                            <img class="header-save-image" src="../rentify-images/—Pngtree—line icon save_5784773.png">
+                            <img class="header-save-image" src="—Pngtree—line icon save_5784773.png">
                             <div class="save-total js-save-total">
                                 <div class="save-total-number ">
                                                 ${save.length}
@@ -24,7 +24,7 @@ document.querySelector('.js-header-login').addEventListener('click',()=>{
             </div>
             <div class="seller-tooltip">
                 <div class="header-login" style="margin:0px;" >
-                    <img class="header-save-image" style="width:30px; height:30px; margin:0px;" src="../rentify-images/user.png">
+                    <img class="header-save-image" style="width:30px; height:30px; margin:0px;" src="user.png">
                      
                 </div>
             </div>
@@ -50,21 +50,21 @@ rentify.forEach((rentify)=>{
     html += `<div class="flex-rentify" id="${rentify.userid}">
                 <div class="rentifydetail">
                     <div class="rentify-image">
-                            <img class="images" src="../rentify-images/${rentify.image}">
+                            <img class="images" src="${rentify.image}">
                     </div>
                     <div class="rentify-details">
-                        <img class="location" src="../rentify-images/pngwing.com.png">
+                        <img class="location" src="pngwing.com.png">
                         <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                         <div class="some-details">
                             <div class="some-detail">
-                                <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                   Bedroom : ${rentify.bedroom}
                             </div>
                             <div class="dots">
                                 .
                             </div>
                             <div class="some-detail">
-                                <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                <img style="width:12px;margin-right:8px;" src="shower.png">
                                   Bath : ${rentify.bathroom}
                             </div>
                         </div>
@@ -109,21 +109,21 @@ document.querySelector('.js-search').addEventListener('click',()=>{
                 html +=`<div class="flex-rentify" id="${rentify.userid}">
                             <div class="rentifydetail">
                                 <div class="rentify-image">
-                                        <img class="images" src="../rentify-images/${rentify.image}">
+                                        <img class="images" src="${rentify.image}">
                                 </div>
                                 <div class="rentify-details">
-                                    <img class="location" src="../rentify-images/pngwing.com.png">
+                                    <img class="location" src="pngwing.com.png">
                                     <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                                     <div class="some-details">
                                         <div class="some-detail">
-                                            <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                            <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                             Bedroom : ${rentify.bedroom}
                                         </div>
                                         <div class="dots">
                                             .
                                         </div>
                                         <div class="some-detail">
-                                            <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                            <img style="width:12px;margin-right:8px;" src="shower.png">
                                             Bath : ${rentify.bathroom}
                                         </div>
                                     </div>
