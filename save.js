@@ -1,6 +1,6 @@
-import {rentify} from '../js/rentify-details.js';
-import {save,changes,view} from '../js/common.js';
-import {viewbutton} from '../js/commonfunction.js';
+import {rentify} from './rentify-details.js';
+import {save,changes,view} from './common.js';
+import {viewbutton} from './commonfunction.js';
 
 
 //console.log(save);
@@ -19,11 +19,11 @@ save.forEach((save)=>{
                 <div class="save-rentify-inorder js-removerid${rentify.userid}">
                         <div class="saved-rentify">
                             <div class="right-side">
-                                    <img class="images" src="../rentify-images/${rentify.image}">
+                                    <img class="images" src="${rentify.image}">
                             </div>
                             <div class="left-side">
                                 <div>
-                                    <img class="location-icon" style="display:inline-block" src="../rentify-images/pngwing.com.png">
+                                    <img class="location-icon" style="display:inline-block" src="pngwing.com.png">
                                     <div class="detail" style="display:inline-block">${rentify.district}, ${rentify.state}.</div>
                                     <div class="amount">
                                         $ ${rentify.price}/-
